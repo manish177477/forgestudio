@@ -11,6 +11,12 @@ export const services = [
     deliverables: ['Brand positioning & story', 'Naming & messaging', 'Visual identity systems', 'Guidelines & launch assets'],
     process: 'We get close to your ambition, find what makes you different, and turn that difference into a practical identity system your team can use with confidence.',
     outcome: 'A distinctive, consistent brand built to grow with your business.',
+    faqs: [
+      ['What is included in brand identity design?', 'Brand identity can include positioning and story, naming and messaging, a visual identity such as logo and supporting elements, and guidelines for using the system consistently. The final scope is agreed around your business and brief.'],
+      ['How much does brand identity design cost in India?', 'The cost depends on the research, strategy, naming, identity assets and guidelines included. We understand your brief first, then provide a tailored scope, fee and timeline rather than a one-size-fits-all price.'],
+      ['How long does the brand identity process take?', 'Timing depends on the scope, number of decision-makers, feedback and approvals. We set project milestones and review rounds in the proposal before work begins.'],
+      ['What is the difference between a logo and a brand identity?', 'A logo is one part of a brand identity. A complete identity also defines the visual language, messaging and practical guidelines that help the brand feel consistent across touchpoints.'],
+    ],
   },
   {
     slug: 'creative-design',
@@ -24,6 +30,12 @@ export const services = [
     deliverables: ['Creative direction & art direction', 'Campaign concepts', 'Editorial & presentation design', 'Packaging & print design'],
     process: 'We start with the audience and the job to be done, then explore the right ideas, refine the details and deliver production-ready design.',
     outcome: 'Clear, cohesive creative that works beautifully across formats.',
+    faqs: [
+      ['What graphic design services can a business get?', 'Depending on the brief, creative design can include campaign concepts, art direction, editorial and presentation design, packaging, print and digital assets. We recommend the formats that serve your message and audience.'],
+      ['How much do graphic design services cost?', 'Design fees vary with the type and number of deliverables, creative complexity, production requirements and revision rounds. We confirm the scope and fee in a proposal before starting.'],
+      ['Can you create designs for both print and digital?', 'Yes. We can develop a connected visual direction and prepare agreed assets for print and digital use, with specifications tailored to the channels and production needs.'],
+      ['Do I need brand identity or creative design?', 'Brand identity establishes the core visual and verbal system. Creative design applies that system to specific needs such as campaigns, presentations, packaging or editorial materials.'],
+    ],
   },
   {
     slug: 'content-production',
@@ -37,6 +49,12 @@ export const services = [
     deliverables: ['Creative production planning', 'Photo & video direction', 'Campaign content', 'Asset editing & delivery'],
     process: 'From the first treatment to final files, we bring creative, production and post-production into one collaborative process.',
     outcome: 'A purposeful library of on-brand content, ready for every channel.',
+    faqs: [
+      ['What is content production?', 'Content production is the process of planning, creating and preparing material—such as photography and video—so it is ready to tell your brand story across relevant channels.'],
+      ['What types of content can you produce?', 'Depending on your brief, we can plan and produce brand photography, campaign imagery, video content and edited assets prepared for agreed channels and formats.'],
+      ['What does a content production process include?', 'A project can include briefing, creative treatment, production planning, shoot direction, editing and organised delivery. The exact stages depend on the content and project scope.'],
+      ['Can you create content for social media?', 'Yes. We can plan and prepare photo and video assets for your agreed social channels, considering each platform’s format and the story your content needs to tell.'],
+    ],
   },
   {
     slug: 'website-development',
@@ -50,19 +68,32 @@ export const services = [
     deliverables: ['Website strategy & structure', 'UX and responsive UI design', 'Front-end development', 'Content & on-page SEO'],
     process: 'We map the customer journey, shape a clear and accessible experience, then build and test across screen sizes before launch.',
     outcome: 'A responsive website that looks considered and makes it easy to take the next step.',
+    faqs: [
+      ['What do website development services include?', 'A website project can include discovery, site structure, UX and responsive UI design, front-end development, content and on-page SEO, testing and launch preparation. The proposal defines the agreed deliverables.'],
+      ['How much does website development cost?', 'The cost depends on the site’s size, functionality, content needs, integrations and delivery scope. After understanding your requirements, we provide a tailored proposal with fees and milestones.'],
+      ['How long does it take to develop a website?', 'The timeline depends on the number of pages, features, content readiness, integrations and feedback cycles. We agree on a project schedule after defining the scope.'],
+      ['Will my website work on mobile devices?', 'We design responsive experiences for different screen sizes and test agreed pages across common viewport sizes before launch.'],
+    ],
   },
   {
     slug: 'marketing',
-    short: 'Marketing',
-    eyebrow: '05 / Marketing',
-    title: 'Make every campaign add up to something bigger.',
-    description: 'Connect sharp positioning with thoughtful campaign creative to reach the people who matter and build momentum that lasts beyond launch day.',
+    short: 'Digital marketing',
+    eyebrow: '05 / Digital marketing',
+    title: 'Digital marketing that moves your brand forward.',
+    description: 'Connect search, content, social and paid campaigns to reach the right people, earn attention and turn interest into meaningful action.',
     image: '/assets/forge-branded-details-Bctahl7-.jpg',
-    imageAlt: 'Distinctive orange and navy brand assets ready for a campaign',
-    intro: 'Marketing works best when every channel tells one connected story. We help ambitious teams turn a clear brand idea into relevant campaigns and consistent communication.',
-    deliverables: ['Campaign strategy & planning', 'Campaign creative & rollout', 'Social content systems', 'Channel-ready brand assets'],
-    process: 'We align on the audience and objective first, then shape the message and creative into a practical campaign your team can activate.',
-    outcome: 'More consistent communication—and a clearer reason for people to engage.',
+    imageAlt: 'Orange and navy branded materials representing a connected digital campaign',
+    intro: 'Digital marketing works best when each channel has a clear role and every touchpoint feels connected. We bring strategy, creative and measurement together around your business goals.',
+    deliverables: ['SEO & local SEO', 'Google Ads & paid social', 'Content & social media', 'Email marketing & automation', 'Analytics & conversion optimization', 'AEO & AI search readiness'],
+    process: 'We start with your audience and objectives, choose the right channel mix, build useful campaigns and use performance insights to keep improving.',
+    outcome: 'A focused digital presence that connects discovery, engagement and action.',
+    faqs: [
+      ['What services are included in digital marketing?', 'Digital marketing can include SEO and local SEO, Google Ads and PPC, paid social, social media marketing, content marketing, email campaigns and automation, analytics, conversion optimization and answer or AI search readiness. The recommended mix depends on your goals and audience.'],
+      ['How much do digital marketing services cost?', 'Pricing depends on the channels, campaign scope, content needs, reporting and ongoing support required. Media spend is a separate consideration for paid campaigns. We recommend a scope after discussing your goals and budget.'],
+      ['Should my business start with SEO or Google Ads?', 'SEO can support long-term organic discovery, while Google Ads can help reach people actively searching sooner, subject to campaign setup and budget. The right starting point depends on your timeline, competition and objectives; the channels can also work together.'],
+      ['How long does digital marketing take to show results?', 'Timeframes vary by channel, competition, website condition, budget and offer. Paid campaigns can generate activity after launch, while SEO and content typically need sustained work. We set realistic measures for each channel.'],
+      ['Can I hire you for just one digital marketing service?', 'Yes. We can support a focused channel or coordinate several services. We’ll agree on the scope, responsibilities and measures that fit your needs.'],
+    ],
   },
   {
     slug: 'ai-content',
@@ -76,6 +107,12 @@ export const services = [
     deliverables: ['AI content workflow discovery', 'Brand voice prompts & guardrails', 'Creative exploration', 'Team enablement & templates'],
     process: 'We identify where AI can genuinely help, prototype a safe and useful workflow, then give your team the guidance to use it responsibly.',
     outcome: 'More room to explore ideas, with brand quality and human judgement at the centre.',
+    faqs: [
+      ['What is AI content creation?', 'AI content creation uses generative tools to help with tasks such as exploring ideas, drafting or adapting content. Our approach adds human direction, editing and brand-specific review rather than publishing raw output.'],
+      ['What types of content can AI help create?', 'With an appropriate workflow, AI can assist with ideation, outlines, first drafts and adapting approved content for different formats. The useful applications depend on your team, subject matter and brand voice.'],
+      ['Is AI-generated content accurate and original?', 'Not automatically. AI can produce incorrect or overly similar material, so human fact-checking, editing and rights review are important before publishing. We help teams define practical checks and guardrails.'],
+      ['Can AI content rank in Google?', 'There is no guaranteed ranking based on how content is produced. Content should be accurate, original, useful to people and reviewed by someone with appropriate subject knowledge.'],
+    ],
   },
   {
     slug: 'corporate-gifting',
@@ -89,6 +126,12 @@ export const services = [
     deliverables: ['Curated corporate gifting', 'Client & employee welcome kits', 'Custom branded merchandise', 'Packaging & presentation'],
     process: 'We learn who the gift is for and what you want it to say, then curate the right objects, packaging and personal details to bring that moment to life.',
     outcome: 'Memorable, well-made gifts that strengthen relationships and make your brand tangible.',
+    faqs: [
+      ['What are good corporate gift ideas for clients?', 'Useful, well-made gifts that suit the recipient and feel connected to your brand are a strong starting point. We can help curate gift sets, welcome kits or branded merchandise around the occasion and budget.'],
+      ['What is included in corporate gifting services?', 'Depending on the brief, support can include selecting gifts, curating client or employee kits, branded merchandise, packaging and presentation, and coordinating quantities and delivery details.'],
+      ['Can corporate gifts be customized with our logo?', 'Customization may be available through branded products, inserts or packaging. Options depend on the item, supplier, production method, quantity and schedule, which we confirm before proceeding.'],
+      ['Is there a minimum order quantity for corporate gifts?', 'Minimum quantities vary by product and supplier. We confirm available options, minimums, production lead times and costs during curation, before an order is approved.'],
+    ],
   },
 ]
 

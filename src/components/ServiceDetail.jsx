@@ -54,11 +54,23 @@ export default function ServiceDetail({ service }) {
   const description = service.description
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: service.short,
-    serviceType: service.short,
-    description,
-    provider: { '@type': 'Organization', name: 'Forge Studio' },
+    '@graph': [
+      {
+        '@type': 'Service',
+        name: service.short,
+        serviceType: service.short,
+        description,
+        provider: { '@type': 'Organization', name: 'Forge Studio' },
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: service.faqs.map(([question, answer]) => ({
+          '@type': 'Question',
+          name: question,
+          acceptedAnswer: { '@type': 'Answer', text: answer },
+        })),
+      },
+    ],
   }
   usePageSeo({ title: `${service.short} | Forge Studio`, description, schema })
   const nextService = services[(services.indexOf(service) + 1) % services.length]
@@ -117,6 +129,24 @@ export default function ServiceDetail({ service }) {
               <article className="journey-card" key={title}>
                 <span>0{index + 1}</span><h3>{title}</h3><p>{description}</p>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="service-faq-section section-pad">
+        <div className="shell faq-grid">
+          <div>
+            <Eyebrow>Common questions</Eyebrow>
+            <h2 className="section-heading">{service.short},<br /><em>explained.</em></h2>
+            <p className="body-copy">Answers to questions people often ask when exploring {service.short.toLowerCase()}.</p>
+            <Link className="text-link" to="/contact">Ask us about your project <span>↗</span></Link>
+          </div>
+          <div className="faq-list">
+            {service.faqs.map(([question, answer]) => (
+              <details key={question}>
+                <summary>{question}<span aria-hidden="true">+</span></summary>
+                <p>{answer}</p>
+              </details>
             ))}
           </div>
         </div>

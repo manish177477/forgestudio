@@ -10,6 +10,8 @@ import CreativeDesignPage from './pages/services/CreativeDesignPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import MarketingPage from './pages/services/MarketingPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx'
+import TermsPage from './pages/TermsPage.jsx'
 import WebsiteDevelopmentPage from './pages/services/WebsiteDevelopmentPage.jsx'
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
@@ -67,6 +69,8 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-and-conditions" element={<TermsPage />} />
         <Route path="/services/brand-identity" element={<BrandIdentityPage />} />
         <Route path="/services/creative-design" element={<CreativeDesignPage />} />
         <Route path="/services/content-production" element={<ContentProductionPage />} />

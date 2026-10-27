@@ -12,7 +12,7 @@ export default function Footer() {
             <p className="eyebrow text-orange-400">Have a good one in mind?</p>
             <h2 className="footer-heading">Let&apos;s make<br />something matter.</h2>
             <p className="footer-intro">Forge Studio brings brand thinking, creative craft and digital know-how together to make your next move clearer.</p>
-            <Link className="text-link text-white" to="/contact">Start a conversation <span>↗</span></Link>
+            <Link className="text-link footer-cta" to="/contact">Start a conversation <span>↗</span></Link>
           </div>
           <nav className="footer-links" aria-label="Quick links">
             <p className="eyebrow text-white/50">Quick links</p>
@@ -45,6 +45,10 @@ export default function Footer() {
             <span className="wordmark-name">Forge <span>Studio</span></span>
           </Link>
           <p>Independent creative partner. Built on good ideas.</p>
+          <nav className="footer-legal" aria-label="Legal">
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
+          </nav>
           <p>© {new Date().getFullYear()} Forge Studio</p>
         </div>
       </div>

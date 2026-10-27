@@ -30,14 +30,12 @@ export default function HomePage() {
               <Link className="button button-dark" to="/contact">Let&apos;s build something remarkable <span>↗</span></Link>
               <a className="text-link" href="#services">Explore our services <span>↓</span></a>
             </div>
-            <p className="hero-note">Independent creative partner · New Delhi / Global</p>
           </div>
           <div className="hero-visual reveal reveal-later">
             <img src={assetUrl('/assets/forge-creative-workspace-B2yH-tU9.jpg')} alt="A sunlit creative studio with brand concepts, a camera and design work in progress" fetchPriority="high" />
             <div className="hero-stamp"><span>MAKE<br />IT MEAN<br />SOMETHING</span><b>F.</b></div>
             <p className="image-caption">Good ideas deserve good company.</p>
           </div>
-          <div className="hero-index">01 — 06 <span /> BRAND / DESIGN / DIGITAL</div>
         </div>
       </section>
 
@@ -51,7 +49,13 @@ export default function HomePage() {
 
       <section className="intro-section section-pad">
         <div className="shell intro-grid">
-          <Eyebrow>More than a pretty picture</Eyebrow>
+          <div className="intro-aside">
+            <Eyebrow>More than a pretty picture</Eyebrow>
+            <figure className="intro-visual reveal reveal-later">
+              <img src={assetUrl('/assets/forge-branded-details-Bctahl7-.jpg')} alt="Thoughtfully crafted navy and orange branded packaging" loading="lazy" />
+              <figcaption>Every detail tells your story.</figcaption>
+            </figure>
+          </div>
           <div>
             <h2 className="section-heading">The best work happens when <em>everything</em> works together.</h2>
             <p className="body-copy">We connect the thinking to the making—bringing strategy, identity, content and digital into one clear, considered experience. No hand-offs. No noise. Just the right people around the right idea.</p>
@@ -72,11 +76,13 @@ export default function HomePage() {
             {pillars.map((pillar) => (
               <Link className="service-card pillar-card service-catalog-card" to={`/services/${pillar.slug}`} key={pillar.slug}>
                 <div className="service-card-image"><img src={assetUrl(pillar.image)} alt={pillar.imageAlt} loading="lazy" /></div>
-                <span className="service-card-number">{pillar.eyebrow}</span>
-                <div className="service-card-top"><span>{pillar.title}</span><span className="service-arrow">↗</span></div>
-                <p>{pillar.description}</p>
-                <span className="pillar-offerings">{pillar.offerings.join(' · ')}</span>
-                <span className="service-card-link">Explore <span aria-hidden="true">↗</span></span>
+                <div className="service-card-content">
+                  <span className="service-card-number">{pillar.eyebrow}</span>
+                  <div className="service-card-top"><span>{pillar.title}</span><span className="service-arrow">↗</span></div>
+                  <p>{pillar.description}</p>
+                  <span className="pillar-offerings">{pillar.offerings.join(' · ')}</span>
+                  <span className="service-card-link">Explore <span aria-hidden="true">↗</span></span>
+                </div>
               </Link>
             ))}
           </div>
