@@ -2,7 +2,7 @@ import brandedDetailsImage from '../assets/images/Brand-identity.jpeg'
 import creativeWorkspaceImage from '../assets/images/Graphic-design.jpeg'
 import studioProcessImage from '../assets/images/video-editing.jpeg'
 import webdesignImage from '../assets/images/Website-design .jpeg'
-import DigitalMarketing from '../assets/images/Digital-marketing.jpeg'
+import DigitalMarketing from '../assets/images/Digital-Marketing.jpeg'
 import CorporateGifting from '../assets/images/Corporate-gifting.jpeg'
 import GenerativeContent from '../assets/images/Ai-services.jpeg'
 export const services = [
