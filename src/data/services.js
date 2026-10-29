@@ -4,6 +4,7 @@ import studioProcessImage from '../assets/images/video-editing.jpeg'
 import webdesignImage from '../assets/images/Website-design .jpeg'
 import DigitalMarketing from '../assets/images/Digital-marketing.jpeg'
 import CorporateGifting from '../assets/images/Corporate-gifting.jpeg'
+import GenerativeContent from '../assets/images/Ai-services.jpeg'
 export const services = [
   {
     slug: 'brand-identity',
@@ -107,7 +108,7 @@ export const services = [
     eyebrow: '06 / Emerging tools',
     title: 'Move at the speed of new ideas, without losing your voice.',
     description: 'Use emerging AI tools with a human point of view. We help teams create useful, on-brand content workflows that pair creative judgement with new possibilities.',
-    image: studioProcessImage,
+    image: GenerativeContent,
     imageAlt: 'The Forge team collaborating on ideas and content in the studio',
     intro: 'AI can help teams explore, adapt and create more efficiently. The value comes from using it with clear guardrails, thoughtful direction and a distinctly human edit.',
     deliverables: ['AI content workflow discovery', 'Brand voice prompts & guardrails', 'Creative exploration', 'Team enablement & templates'],
