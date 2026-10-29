@@ -3,7 +3,7 @@ import { pageSeo } from '../data/pageSeo.js'
 import usePageSeo from '../hooks/usePageSeo.js'
 import ContactCallout from '../components/ContactCallout.jsx'
 import Eyebrow from '../components/Eyebrow.jsx'
-import { assetUrl } from '../utils/assetUrl.js'
+import studioProcessImage from '../assets/images/forge-studio-process-CtKRjiAE.jpg'
 
 export default function AboutPage() {
   const seo = pageSeo.about
@@ -22,7 +22,7 @@ export default function AboutPage() {
       </section>
       <section className="about-image-section">
         <div className="shell about-image-wrap">
-          <img src={assetUrl('/assets/forge-studio-process-CtKRjiAE.jpg')} alt="Forge Studio collaborators working together in a bright creative studio" fetchPriority="high" />
+          <img src={studioProcessImage} alt="Forge Studio collaborators working together in a bright creative studio" fetchPriority="high" />
           <span className="image-caption">Different perspectives. One shared ambition.</span>
         </div>
       </section>

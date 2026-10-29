@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { services } from '../data/services.js'
 import { studioEmail } from '../data/contact.js'
-import { assetUrl } from '../utils/assetUrl.js'
+import forgeLogo from '../assets/images/forge-logo-qGJ_2-zb.png'
 
 export default function Footer() {
   return (
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <Link className="wordmark wordmark-footer" to="/" aria-label="Forge Studio home">
-            <img className="brand-logo" src={assetUrl('/assets/forge-logo-qGJ_2-zb.png')} alt="" />
+            <img className="brand-logo" src={forgeLogo} alt="" />
             <span className="wordmark-name">Forge <span>Studio</span></span>
           </Link>
           <p>Independent creative partner. Built on good ideas.</p>

@@ -1,3 +1,9 @@
+import brandedDetailsImage from '../assets/images/Brand-identity.jpeg'
+import creativeWorkspaceImage from '../assets/images/Graphic-design.jpeg'
+import studioProcessImage from '../assets/images/video-editing.jpeg'
+import webdesignImage from '../assets/images/Website-design .jpeg'
+import DigitalMarketing from '../assets/images/Digital-marketing.jpeg'
+import CorporateGifting from '../assets/images/Corporate-gifting.jpeg'
 export const services = [
   {
     slug: 'brand-identity',
@@ -5,7 +11,7 @@ export const services = [
     eyebrow: '01 / Brand',
     title: 'A brand people feel before they read a word.',
     description: 'Build a clear, confident identity that gives your business a point of view—and gives every touchpoint a reason to feel unmistakably yours.',
-    image: '/assets/forge-branded-details-Bctahl7-.jpg',
+    image: brandedDetailsImage,
     imageAlt: 'Tactile brand stationery and packaging in Forge Studio colours',
     intro: 'A strong brand is more than a logo. It is the story, strategy and visual language that helps the right people recognise you, remember you and choose you.',
     deliverables: ['Brand positioning & story', 'Naming & messaging', 'Visual identity systems', 'Guidelines & launch assets'],
@@ -24,7 +30,7 @@ export const services = [
     eyebrow: '02 / Design',
     title: 'Good design makes your next move feel obvious.',
     description: 'From a single campaign to a complete design system, we make useful, thoughtful creative that gets noticed and makes your message easier to understand.',
-    image: '/assets/forge-creative-workspace-B2yH-tU9.jpg',
+    image: creativeWorkspaceImage,
     imageAlt: 'Creative direction and design work in progress on a studio desk',
     intro: 'Design is how a good idea becomes something people can see, use and share. We bring strategic thinking and craft together to make every interaction work harder.',
     deliverables: ['Creative direction & art direction', 'Campaign concepts', 'Editorial & presentation design', 'Packaging & print design'],
@@ -43,7 +49,7 @@ export const services = [
     eyebrow: '03 / Production',
     title: 'Make the moments that make your brand real.',
     description: 'Bring your brand to life with carefully made photography, video and campaign content—planned with purpose and produced with attention to every detail.',
-    image: '/assets/forge-studio-process-CtKRjiAE.jpg',
+    image: studioProcessImage,
     imageAlt: 'The Forge creative team collaborating around a production table',
     intro: 'The best content feels considered, not complicated. We build a production plan around your story, your audience and the places your content needs to work.',
     deliverables: ['Creative production planning', 'Photo & video direction', 'Campaign content', 'Asset editing & delivery'],
@@ -62,7 +68,7 @@ export const services = [
     eyebrow: '04 / Web',
     title: 'A better website starts with a better first impression.',
     description: 'Turn your digital front door into a fast, accessible and on-brand experience that helps people understand what you do—and what to do next.',
-    image: '/assets/forge-creative-workspace-B2yH-tU9.jpg',
+    image: webdesignImage,
     imageAlt: 'A laptop displaying a colourful design system in a creative workspace',
     intro: 'Your website should work as hard as you do. We connect strategy, design, content and development to create useful digital experiences with a clear path to action.',
     deliverables: ['Website strategy & structure', 'UX and responsive UI design', 'Front-end development', 'Content & on-page SEO'],
@@ -81,7 +87,7 @@ export const services = [
     eyebrow: '05 / Digital marketing',
     title: 'Digital marketing that moves your brand forward.',
     description: 'Connect search, content, social and paid campaigns to reach the right people, earn attention and turn interest into meaningful action.',
-    image: '/assets/forge-branded-details-Bctahl7-.jpg',
+    image: DigitalMarketing,
     imageAlt: 'Orange and navy branded materials representing a connected digital campaign',
     intro: 'Digital marketing works best when each channel has a clear role and every touchpoint feels connected. We bring strategy, creative and measurement together around your business goals.',
     deliverables: ['SEO & local SEO', 'Google Ads & paid social', 'Content & social media', 'Email marketing & automation', 'Analytics & conversion optimization', 'AEO & AI search readiness'],
@@ -101,7 +107,7 @@ export const services = [
     eyebrow: '06 / Emerging tools',
     title: 'Move at the speed of new ideas, without losing your voice.',
     description: 'Use emerging AI tools with a human point of view. We help teams create useful, on-brand content workflows that pair creative judgement with new possibilities.',
-    image: '/assets/forge-studio-process-CtKRjiAE.jpg',
+    image: studioProcessImage,
     imageAlt: 'The Forge team collaborating on ideas and content in the studio',
     intro: 'AI can help teams explore, adapt and create more efficiently. The value comes from using it with clear guardrails, thoughtful direction and a distinctly human edit.',
     deliverables: ['AI content workflow discovery', 'Brand voice prompts & guardrails', 'Creative exploration', 'Team enablement & templates'],
@@ -120,7 +126,7 @@ export const services = [
     eyebrow: '07 / Corporate solutions',
     title: 'Turn a thoughtful gift into a lasting brand impression.',
     description: 'Create considered corporate gifts, client welcome kits and branded merchandise that make people feel valued—and keep your brand close.',
-    image: '/assets/forge-branded-details-Bctahl7-.jpg',
+    image: CorporateGifting,
     imageAlt: 'Carefully considered branded stationery and packaging for a memorable client gift',
     intro: 'The best branded gifts are useful, personal and unmistakably connected to your brand. Thoughtful details turn a package into an experience people remember.',
     deliverables: ['Curated corporate gifting', 'Client & employee welcome kits', 'Custom branded merchandise', 'Packaging & presentation'],

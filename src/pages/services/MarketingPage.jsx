@@ -4,7 +4,6 @@ import Eyebrow from '../../components/Eyebrow.jsx'
 import { pageSeo } from '../../data/pageSeo.js'
 import { servicesBySlug } from '../../data/services.js'
 import usePageSeo from '../../hooks/usePageSeo.js'
-import { assetUrl } from '../../utils/assetUrl.js'
 
 const digitalServices = [
   {
@@ -127,7 +126,7 @@ export default function MarketingPage() {
               </ul>
             </div>
             <div className="digital-hero-image">
-              <img src={assetUrl(service.image)} alt={service.imageAlt} fetchPriority="high" />
+              <img src={service.image} alt={service.imageAlt} fetchPriority="high" />
               <span>One connected digital presence.</span>
             </div>
           </div>

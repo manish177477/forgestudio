@@ -3,7 +3,9 @@ import { pillars } from '../data/services.js'
 import { pageSeo } from '../data/pageSeo.js'
 import usePageSeo from '../hooks/usePageSeo.js'
 import Eyebrow from '../components/Eyebrow.jsx'
-import { assetUrl } from '../utils/assetUrl.js'
+import brandedDetailsImage from '../assets/images/forge-branded-details-Bctahl7-.jpg'
+import creativeWorkspaceImage from '../assets/images/forge-creative-workspace-B2yH-tU9.jpg'
+import studioProcessImage from '../assets/images/forge-studio-process-CtKRjiAE.jpg'
 
 export default function HomePage() {
   const seo = pageSeo.home
@@ -32,7 +34,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual reveal reveal-later">
-            <img src={assetUrl('/assets/forge-creative-workspace-B2yH-tU9.jpg')} alt="A sunlit creative studio with brand concepts, a camera and design work in progress" fetchPriority="high" />
+            <img src={creativeWorkspaceImage} alt="A sunlit creative studio with brand concepts, a camera and design work in progress" fetchPriority="high" />
             <div className="hero-stamp"><span>MAKE<br />IT MEAN<br />SOMETHING</span><b>F.</b></div>
             <p className="image-caption">Good ideas deserve good company.</p>
           </div>
@@ -52,7 +54,7 @@ export default function HomePage() {
           <div className="intro-aside">
             <Eyebrow>More than a pretty picture</Eyebrow>
             <figure className="intro-visual reveal reveal-later">
-              <img src={assetUrl('/assets/forge-branded-details-Bctahl7-.jpg')} alt="Thoughtfully crafted navy and orange branded packaging" loading="lazy" />
+              <img src={brandedDetailsImage} alt="Thoughtfully crafted navy and orange branded packaging" loading="lazy" />
               <figcaption>Every detail tells your story.</figcaption>
             </figure>
           </div>
@@ -75,7 +77,7 @@ export default function HomePage() {
           <div className="service-grid">
             {pillars.map((pillar) => (
               <Link className="service-card pillar-card service-catalog-card" to={`/services/${pillar.slug}`} key={pillar.slug}>
-                <div className="service-card-image"><img src={assetUrl(pillar.image)} alt={pillar.imageAlt} loading="lazy" /></div>
+                <div className="service-card-image"><img src={pillar.image} alt={pillar.imageAlt} loading="lazy" /></div>
                 <div className="service-card-content">
                   <span className="service-card-number">{pillar.eyebrow}</span>
                   <div className="service-card-top"><span>{pillar.title}</span><span className="service-arrow">↗</span></div>
@@ -92,7 +94,7 @@ export default function HomePage() {
       <section className="approach-section">
         <div className="shell approach-grid">
           <div className="approach-image">
-            <img src={assetUrl('/assets/forge-studio-process-CtKRjiAE.jpg')} alt="The Forge Studio team sharing ideas around a table" loading="lazy" />
+            <img src={studioProcessImage} alt="The Forge Studio team sharing ideas around a table" loading="lazy" />
             <span className="approach-image-note">A little better, together.</span>
           </div>
           <div className="approach-copy">

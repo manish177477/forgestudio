@@ -3,7 +3,6 @@ import { services } from '../data/services.js'
 import usePageSeo from '../hooks/usePageSeo.js'
 import ContactCallout from './ContactCallout.jsx'
 import Eyebrow from './Eyebrow.jsx'
-import { assetUrl } from '../utils/assetUrl.js'
 
 const serviceJourneys = {
   'brand-identity': [
@@ -89,7 +88,7 @@ export default function ServiceDetail({ service }) {
               <Link className="button button-dark" to="/contact">Talk to us about {service.short.toLowerCase()} <span>↗</span></Link>
             </div>
             <div className="service-hero-image">
-              <img src={assetUrl(service.image)} alt={service.imageAlt} fetchPriority="high" />
+              <img src={service.image} alt={service.imageAlt} fetchPriority="high" />
               <span className="image-caption">{service.short}, considered from every angle.</span>
             </div>
           </div>

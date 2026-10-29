@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { services } from '../data/services.js'
-import { assetUrl } from '../utils/assetUrl.js'
+import forgeLogo from '../assets/images/forge-logo-qGJ_2-zb.png'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -23,7 +23,7 @@ export default function Header() {
     <header className="site-header">
       <div className="shell flex h-[78px] items-center justify-between">
         <Link className="wordmark" to="/" aria-label="Forge Studio home" onClick={goHome}>
-          <img className="brand-logo" src={assetUrl('/assets/forge-logo-qGJ_2-zb.png')} alt="Forge Studio" />
+          <img className="brand-logo" src={forgeLogo} alt="Forge Studio" />
           <span className="wordmark-name">Forge <span>Studio</span></span>
         </Link>
         <nav className={`${menuOpen ? 'nav-open' : ''} site-nav`} aria-label="Main navigation">

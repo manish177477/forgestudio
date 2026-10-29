@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { assetUrl } from '../utils/assetUrl.js'
+import creativeWorkspaceImage from '../assets/images/forge-creative-workspace-B2yH-tU9.jpg'
 
 export default function usePageSeo({ title, description, schema }) {
   const schemaJson = JSON.stringify(schema)
@@ -10,11 +10,12 @@ export default function usePageSeo({ title, description, schema }) {
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
     setMeta('property', 'og:type', 'website')
-    setMeta('property', 'og:image', `${window.location.origin}${assetUrl('/assets/forge-creative-workspace-B2yH-tU9.jpg')}`)
+    const socialImageUrl = new URL(creativeWorkspaceImage, window.location.href).href
+    setMeta('property', 'og:image', socialImageUrl)
     setMeta('name', 'twitter:card', 'summary_large_image')
     setMeta('name', 'twitter:title', title)
     setMeta('name', 'twitter:description', description)
-    setMeta('name', 'twitter:image', `${window.location.origin}${assetUrl('/assets/forge-creative-workspace-B2yH-tU9.jpg')}`)
+    setMeta('name', 'twitter:image', socialImageUrl)
 
     let canonical = document.querySelector('link[rel="canonical"]')
     if (!canonical) {
